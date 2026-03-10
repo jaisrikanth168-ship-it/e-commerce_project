@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Offers</title>
+    <link rel="stylesheet" href="../CSS/style.css">
+</head>
+
+<body onload="loadCart()">
+
+    <header>
+
+        <h2>QuickBuy</h2>
+
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="fruits.html">Fruits</a>
+            <a href="vegetables.html">Vegetables</a>
+            <a href="offers.html">Offers</a>
+            <input type="text" id="search" placeholder="Search Products..." onkeyup="searchProduct()">
+            <a href="cart.html">Cart (<span id="cart-count">0</span>)</a>
+        </nav>
+
+    </header>
+
+    <section class="hero">
+        <h1>🔥 Special Offers</h1>
+        <p>Save up to 30% on fresh groceries</p>
+    </section>
+
+    <section class="products">
+
+        <div class="card">
+            <img src="../Images/apple.avif">
+            <h3>Apple Offer</h3>
+            <p><del>₹120</del> ₹90</p>
+            <button onclick="addWishlist('Apple Offer')"> Wishlist</button>
+            <button onclick="addToCart('Apple Offer',90)">Add to Cart</button>
+        </div>
+
+        <div class="card">
+            <img src="../Images/tomato.avif">
+            <h3>Tomato Offer</h3>
+            <p><del>₹40</del> ₹25</p>
+            <button onclick="addWishlist('Tomato Offer')"> Wishlist</button>
+            <button onclick="addToCart('Tomato Offer',25)">Add to Cart</button>
+        </div>
+
+        <div class="card">
+            <img src="../Images/fruit_combo.avif">
+            <h3>Fruit Combo</h3>
+            <p><del>₹200</del> ₹150</p>
+            <button onclick="addWishlist('Fruit Combo')"> Wishlist</button>
+            <button onclick="addToCart('Fruit Combo',150)">Add to Cart</button>
+        </div>
+
+        <div class="card">
+            <img src="../Images/vegetable_combo.avif">
+            <h3>Vegetable Combo</h3>
+            <p><del>₹180</del> ₹130</p>
+            <button onclick="addWishlist('Vegetable Combo')"> Wishlist</button>
+            <button onclick="addToCart('Vegetable Combo',130)">Add to Cart</button>
+        </div>
+
+    </section>
+
+    <footer>
+        <p>© 2026 QuickBuy | All Rights Reserved</p>
+    </footer>
+
+    <script src="../Javascript/script.js"></script>
+
+</body>
+
+</html>

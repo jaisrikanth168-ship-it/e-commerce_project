@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Cart</title>
+    <link rel="stylesheet" href="../CSS/style.css">
+</head>
+
+<body onload="displayCart();loadCart()">
+
+    <header>
+
+        <h2>QuickBuy</h2>
+
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="fruits.html">Fruits</a>
+            <a href="vegetables.html">Vegetables</a>
+            <a href="offers.html">Offers</a>
+            <input type="text" id="search" placeholder="Search Products..." onkeyup="searchProduct()">
+            <a href="cart.html">Cart (<span id="cart-count">0</span>)</a>
+        </nav>
+
+    </header>
+
+    <h2 class="title">Your Cart</h2>
+
+    <table class="cart-table">
+
+        <tr>
+            <th>Product</th>
+            <th>Price</th>
+            <th>Remove</th>
+        </tr>
+
+        <tbody id="cart-items"></tbody>
+
+    </table>
+
+    <h3 class="total">Total: ₹<span id="total">0</span></h3>
+
+    <footer>
+        <p>© 2026 QuickBuy | All Rights Reserved</p>
+    </footer>
+
+    <script src="../Javascript/script.js"></script>
+
+</body>
+
+</html>
