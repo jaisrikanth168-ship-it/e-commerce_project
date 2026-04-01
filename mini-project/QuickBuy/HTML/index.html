@@ -1,93 +1,113 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>QuickBuy</title>
     <link rel="stylesheet" href="../CSS/style.css">
 </head>
 
 <body onload="loadCart()">
 
+    <!-- HEADER -->
     <header>
-
-        <h2>QuickBuy</h2>
+        <h2 class="logo">QuickBuy</h2>
 
         <nav>
-            <a href="index.html">Home</a>
-            <a href="fruits.html">Fruits</a>
-            <a href="vegetables.html">Vegetables</a>
-            <a href="offers.html">Offers</a>
-
-            <input type="text" id="search" placeholder="Search Products..." onkeyup="searchProduct()">
-            <a href="cart.html">Cart (<span id="cart-count">0</span>)</a>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="fruits.html">Fruits</a></li>
+                <li><a href="vegetables.html">Vegetables</a></li>
+                <li><a href="offers.html">Offers</a></li>
+                <li>
+                    <input type="text" id="search" placeholder="Search Products..." onkeyup="searchProduct()">
+                </li>
+                <li>
+                    <a href="cart.html">Cart (<span id="cart-count">0</span>)</a>
+                </li>
+            </ul>
         </nav>
-
     </header>
 
-    <section class="hero">
+    <!-- HERO SECTION -->
+    <section class="hero" id="hero">
         <h1>Fresh Fruits & Vegetables</h1>
-        <p class="para">Healthy food delivered to your home</p>
+        <p>Healthy food delivered to your home</p>
     </section>
 
-    <h2 class="title">Popular Products</h2>
+    <!-- PRODUCTS -->
+    <h2 style="text-align:center; margin-top:20px;">Popular Products</h2>
 
     <section class="products">
 
-        <div class="card">
-            <img src="../Images/apple.avif">
-            <h3>Apple</h3>
-            <p>₹120</p>
-            <button onclick="addWishlist('Apple')"> Wishlist</button>
-            <button onclick="addToCart('Apple',120)">Add to Cart</button>
-        </div>
+        <div class="product-grid">
 
-        <div class="card">
-            <img src="../Images/banana.avif">
-            <h3>Banana</h3>
-            <p>₹50</p>
-            <button onclick="addWishlist('Banana')"> Wishlist</button>
-            <button onclick="addToCart('Banana',50)">Add to Cart</button>
-        </div>
+            <!-- PRODUCT 1 -->
+            <div class="card">
+                <img src="../Images/apple.avif" alt="Apple">
+                <h3>Apple</h3>
+                <p>₹120</p>
+                <button onclick="addWishlist('Apple')">Wishlist</button>
+                <button onclick="addToCart('Apple',120)">Add to Cart</button>
+            </div>
 
-        <div class="card">
-            <img src="../Images/tomato.avif">
-            <h3>Tomato</h3>
-            <p>₹30</p>
-            <button onclick="addWishlist('Tomato')"> Wishlist</button>
-            <button onclick="addToCart('Tomato',30)">Add to Cart</button>
-        </div>
+            <!-- PRODUCT 2 -->
+            <div class="card">
+                <img src="../Images/banana.avif" alt="Banana">
+                <h3>Banana</h3>
+                <p>₹50</p>
+                <button onclick="addWishlist('Banana')">Wishlist</button>
+                <button onclick="addToCart('Banana',50)">Add to Cart</button>
+            </div>
 
-        <div class="card">
-            <img src="../Images/pineapple.avif">
-            <h3>Pineapple</h3>
-            <p>₹40</p>
-            <button onclick="addWishlist('Pineapple')"> Wishlist</button>
-            <button onclick="addToCart('Pineapple',40)">Add to Cart</button>
-        </div>
+            <!-- PRODUCT 3 -->
+            <div class="card">
+                <img src="../Images/tomato.avif" alt="Tomato">
+                <h3>Tomato</h3>
+                <p>₹30</p>
+                <button onclick="addWishlist('Tomato')">Wishlist</button>
+                <button onclick="addToCart('Tomato',30)">Add to Cart</button>
+            </div>
 
-        <div class="card">
-            <img src="../Images/guava.avif">
-            <h3>Brinjal</h3>
-            <p>₹20</p>
-            <button onclick="addWishlist('Brinjal')"> Wishlist</button>
-            <button onclick="addToCart('Brinjal',20)">Add to Cart</button>
-        </div>
+            <!-- PRODUCT 4 -->
+            <div class="card">
+                <img src="../Images/pineapple.avif" alt="Pineapple">
+                <h3>Pineapple</h3>
+                <p>₹40</p>
+                <button onclick="addWishlist('Pineapple')">Wishlist</button>
+                <button onclick="addToCart('Pineapple',40)">Add to Cart</button>
+            </div>
 
-        <div class="card">
-            <img src="../Images/orange.avif">
-            <h3>Orange</h3>
-            <p>₹45</p>
-            <button onclick="addWishlist('Orange')"> Wishlist</button>
-            <button onclick="addToCart('Orange',45)">Add to Cart</button>
+            <!-- PRODUCT 5 -->
+            <div class="card">
+                <img src="../Images/guava.avif" alt="Guava">
+                <h3>Guava</h3>
+                <p>₹20</p>
+                <button onclick="addWishlist('Guava')">Wishlist</button>
+                <button onclick="addToCart('Guava',20)">Add to Cart</button>
+            </div>
+
+            <!-- PRODUCT 6 -->
+            <div class="card">
+                <img src="../Images/orange.avif" alt="Orange">
+                <h3>Orange</h3>
+                <p>₹45</p>
+                <button onclick="addWishlist('Orange')">Wishlist</button>
+                <button onclick="addToCart('Orange',45)">Add to Cart</button>
+            </div>
+
         </div>
 
     </section>
 
-    <footer>
+    <!-- FOOTER -->
+    <footer class="footer">
         <p>© 2026 QuickBuy | All Rights Reserved</p>
     </footer>
 
-    <script src="../Javascript/script.js"></script>
+    <!-- SCRIPT -->
+    <script src="../JS/index.js"></script>
 
 </body>
 
