@@ -1,69 +1,85 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-    <title>Vegetables - QuickBuy</title>
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QuickBuy - Special Offers</title>
     <link rel="stylesheet" href="../CSS/style.css">
 </head>
 
 <body>
     <header>
-        <h2 class="logo">QuickBuy</h2>
-      
+        <div class="logo">QuickBuy</div>
+
         <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="fruits.html">Fruits</a></li>
                 <li><a href="vegetables.html">Vegetables</a></li>
                 <li><a href="offers.html">Offers</a></li>
-                <li><a href="cart.html">Cart (<span id="cart-count">0</span>)</a></li>
+                <li><a href="cart.html">Cart(<span id="cart-count">0</span>)</a></li>
             </ul>
         </nav>
-      
+
     </header>
 
 
-    <h2 class="page-title" style="text-align: center;margin: 20px;">Fresh Vegetables</h2>
+    <!-- OFFER BANNER -->
 
-    <div class="product-grid">
+    <section class="offer-banner">
+        <h1 style="text-align: center; margin-top: 20px;">🔥 Special Offers</h1>
+        <p style="text-align: center;">Save up to 30% on fresh groceries</p>
+    </section>
 
-        <div class="card">
-            <img src="../Images/tomato.avif">
-            <h3>Tomato</h3>
-            <p>₹30/kg</p>
-            <button onclick="addToCart('Tomato',30)">Add to Cart</button>
+
+    <!-- OFFER PRODUCTS -->
+
+    <section class="products" style="height: 50vh;">
+        <div class="product-grid">
+
+
+            <div class="card">
+                <img src="../Images/apple.avif">
+                <h3>Apple Offer</h3>
+                <p><del>₹120</del> ₹90</p>
+                <button onclick="addToCart('Apple Offer',90)">Add to Cart</button>
+            </div>
+
+
+            <div class="card">
+                <img src="../Images/tomato.avif">
+                <h3>Tomato Offer</h3>
+                <p><del>₹40</del> ₹25</p>
+                <button onclick="addToCart('Tomato Offer',25)">Add to Cart</button>
+            </div>
+
+
+            <div class="card">
+                <img src="../Images/fruit_combo.avif">
+                <h3>Fruit Combo</h3>
+                <p><del>₹200</del> ₹150</p>
+                <button onclick="addToCart('Fruit Combo',150)">Add to Cart</button>
+            </div>
+
+
+            <div class="card">
+                <img src="../Images/vegetable_combo.avif">
+                <h3>Vegetable Combo</h3>
+                <p><del>₹180</del> ₹130</p>
+                <button onclick="addToCart('Vegetable Combo',130)">Add to Cart</button>
+            </div>
         </div>
 
+    </section>
 
-        <div class="card">
-            <img src="../Images/carrot.avif">
-            <h3>Carrot</h3>
-            <p>₹35/kg</p>
-            <button onclick="addToCart('Carrot',35)">Add to Cart</button>
-        </div>
-
-        <div class="card">
-            <img src="../Images/cabbage.avif">
-            <h3>Cabbage</h3>
-            <p>₹40/kg</p>
-            <button onclick="addToCart('Cabbage',35)">Add to Cart</button>
-        </div>
-
-        <div class="card">
-            <img src="../Images/onion.avif">
-            <h3>Onion</h3>
-            <p>₹30/kg</p>
-            <button onclick="addToCart('Cabbage',35)">Add to Cart</button>
-        </div>
-
-    </div>
 
     <div class="footer" style="margin-top: 17.1%;">
         <p>© 2026 QuickBuy | All Rights Reserved</p>
     </div>
+
+
     <script src="../JS/index.js"></script>
 
 </body>
 
-</html>
