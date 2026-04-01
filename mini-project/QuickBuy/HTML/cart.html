@@ -2,48 +2,52 @@
 <html>
 
 <head>
-    <title>Cart</title>
+    <title>Cart - QuickBuy</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../CSS/style.css">
 </head>
 
-<body onload="displayCart();loadCart()">
+<body>
 
     <header>
-
-        <h2>QuickBuy</h2>
+        <h2 class="logo">QuickBuy</h2>
 
         <nav>
-            <a href="index.html">Home</a>
-            <a href="fruits.html">Fruits</a>
-            <a href="vegetables.html">Vegetables</a>
-            <a href="offers.html">Offers</a>
-            <input type="text" id="search" placeholder="Search Products..." onkeyup="searchProduct()">
-            <a href="cart.html">Cart (<span id="cart-count">0</span>)</a>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="fruits.html">Fruits</a></li>
+                <li><a href="vegetables.html">Vegetables</a></li>
+                <li><a href="offers.html">Offers</a></li>
+                <li><a href="cart.html">Cart (<span id="cart-count">0</span>)</a></li>
+            </ul>
         </nav>
 
     </header>
 
-    <h2 class="title">Your Cart</h2>
+
+    <h2 class="page-title" style="text-align: center;margin: 20px;">Your Cart</h2>
 
     <table class="cart-table">
 
-        <tr>
-            <th>Product</th>
-            <th>Price</th>
-            <th>Remove</th>
-        </tr>
+        <thead>
+            <tr>
+                <th>Product</th>
+                <th>Price</th>
+                <th>Remove</th>
+            </tr>
+        </thead>
 
         <tbody id="cart-items"></tbody>
 
     </table>
 
-    <h3 class="total">Total: ₹<span id="total">0</span></h3>
+    <h3 id="total" style="margin-left: 22%; margin-top: 20px;">Total: ₹0</h3>
 
-    <footer>
+
+    <div class="footer" style="margin-top: 35%">
         <p>© 2026 QuickBuy | All Rights Reserved</p>
-    </footer>
-
-    <script src="../Javascript/script.js"></script>
+    </div>
+        <script src="../JS/index.js"></script>
 
 </body>
 
