@@ -1,70 +1,78 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-<title>Fruits</title>
-<link rel="stylesheet" href="../CSS/style.css">
+
+    <title>Fruits - QuickBuy</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="../CSS/style.css">
+
 </head>
 
-<body onload="loadCart()">
+<body>
 
-<header>
+    <header>
 
-<h2>QuickBuy</h2>
+        <h2 class="logo">QuickBuy</h2>
 
-<nav>
-<a href="index.html">Home</a>
-<a href="fruits.html">Fruits</a>
-<a href="vegetables.html">Vegetables</a>
-<a href="offers.html">Offers</a>
-<input type="text" id="search" placeholder="Search Products..." onkeyup="searchProduct()">
-<a href="cart.html">Cart (<span id="cart-count">0</span>)</a>
-</nav>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="fruits.html">Fruits</a></li>
+                <li><a href="vegetables.html">Vegetables</a></li>
+                <li><a href="offers.html">Offers</a></li>
+                <li><a href="cart.html">Cart (<span id="cart-count">0</span>)</a></li>
+            </ul>
+        </nav>
 
-</header>
+    </header>
 
-<h2 class="title">Fresh Fruits</h2>
 
-<section class="products">
+    <h2 class="page-title" style="text-align: center;margin: 20px 0px;">Fresh Fruits</h2>
 
-<div class="card">
-<img src="../Images/apple.avif">
-<h3>Apple</h3>
-<p>₹120/kg</p>
-<button onclick="addWishlist('Apple')"> Wishlist</button>
-<button onclick="addToCart('Apple',120)">Add to Cart</button>
-</div>
+    <div class="product-grid">
 
-<div class="card">
-<img src="../Images/grapes.avif">
-<h3>Grapes</h3>
-<p>₹90/kg</p>
-<button onclick="addWishlist('Grapes')"> Wishlist</button>
-<button onclick="addToCart('Grapes',90)">Add to Cart</button>
-</div>
 
-<div class="card">
-<img src="../Images/strawberry.avif">
-<h3>Strawberry</h3>
-<p>₹80</p>
-<button onclick="addWishlist('Strawberry')"> Wishlist</button>
-<button onclick="addToCart('Strawberry',80)">Add to Cart</button>
-</div>
+        <div class="card">
+            <img src="../Images/apple.avif">
+            <h3>Apple</h3>
+            <p>₹120/kg</p>
+            <button onclick="addToCart('Apple',120)">Add to Cart</button>
+        </div>
 
-<div class="card">
-<img src="../Images/pineapple.avif">
-<h3>Pineapple</h3>
-<p>₹40/kg</p>
-<button onclick="addWishlist('Pineapple')"> Wishlist</button>
-<button onclick="addToCart('Pineapple',40)">Add to Cart</button>
-</div>
 
-</section>
+        <div class="card">
+            <img src="../Images/grapes.avif">
+            <h3>Grapes</h3>
+            <p>₹90/kg</p>
+            <button onclick="addToCart('Grapes',90)">Add to Cart</button>
+        </div>
 
-<footer>
-<p>© 2026 QuickBuy | All Rights Reserved</p>
-</footer>
+        <div class="card">
+            <img src="../Images/strawberry.avif">
+            <h3>Strawberry</h3>
+            <p>₹80</p>
+            <button onclick="addToCart('strawberry',90)">Add to Cart</button>
+        </div>
 
-<script src="../Javascript/script.js"></script>
+        <div class="card">
+            <img src="../Images/pineapple.avif">
+            <h3>Pineapple</h3>
+            <p>₹40/kg</p>
+            <button onclick="addToCart('Grapes',90)">Add to Cart</button>
+        </div>
+
+    </div>
+
+
+    <div class="footer" style="margin-top: 17.1%;">
+
+        <p>© 2026 QuickBuy | All Rights Reserved</p>
+
+        <script src="../JS/index.js"></script>
 
 </body>
+
 </html>
